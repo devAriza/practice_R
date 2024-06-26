@@ -6,7 +6,7 @@
 # R es case sensitive : hace diferencia entre mayusculas y minusculas
 
 # <- , -> operador de asignacion
-
+getwd()
 A<-78  
 a<-56
 
@@ -63,7 +63,7 @@ resultado <- (-b + sqrt(b**2 - 4*a*c) ) / ( 2*a )
 
 resultado
 
-print(round(resultado,2))# funcion de redondeo de decimales
+print(round(75.54464687,2))# funcion de redondeo de decimales
 
 ceiling(3.1)#devuelve el proximo valor entero al numero elegido, al mas arriba
 

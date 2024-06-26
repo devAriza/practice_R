@@ -126,7 +126,7 @@ y<-2
 
 (x == 4 | y == 20)   
 (x == 4 & y == 20)  
-!y == 2 #y es diferente de #?
+!y == 5 #y es diferente de #?
 isTRUE(y == 5) 
 
 #• Estructuras de datos: vectores, matrices, data tables y data frames
@@ -135,6 +135,7 @@ is.vector(caracter) #verifica si un objeto es un vector
 length(caracter)#muestra la longitud de un vector
 
 #ejemplo
+vector_vacio <- c()
 mi_vector <- c(2, 3, 6, 7, 8, 10, 11)
 print(mi_vector)
 
@@ -147,7 +148,7 @@ mi_vector * 2
 mi_vector %% 2
 mi_vector / 2
 
-matrix(5:10) #creacion de una matriz 
+matriz_ejemplo1 <- matrix(1:9, nrow=3, ncol=3)
 
 m <- matrix(x, nrow = 3, ncol = 3) 
 matriz_1 <- matrix(1:36, nrow=3, ncol=12)
@@ -348,6 +349,12 @@ with(murders,plot(population,total))
 x<- with(murders,total / population *1)
 hist(x)
 
+#------------------------ Actividad guiada. Instalar ggplot2 y WriteXLS
+install.packages('WriteXLS')
+library('WriteXLS')
+library('ggplot2')
+
+
 
 
 #--------------------------
@@ -364,7 +371,9 @@ mialumna$calif.materias[3]
 
 #II. Data frames, creando data frames
 x <- 6:8
+ty <-c(6,7,8)
 x
+ty
 y <- c("A", "B", "C")
 
 misgrupos <- data.frame(alumnos = x, nivel = y)
@@ -383,6 +392,7 @@ misgrupos$nivel
 
 #c) Agregar un mensaje con la función paste:
   paste("La media de alumnos es:", mean(misgrupos$alumnos), " fin del ejemplo")
+  paste(misgrupos)
 
 #d) Inspecciona a detalle el df utilizando summary:
   summary(misgrupos)
@@ -396,9 +406,11 @@ misgrupos$nivel
   
   misgrupos$colegiatura <- c(200, 250, 300)
   misgrupos  
+  
+  misgrupos$z <- y
 #g) Eliminar una columna:
   
-  misgrupos$nivel <- NULL
+  misgrupos$y <- NULL
   misgrupos 
   
   
@@ -432,4 +444,6 @@ misgrupos$nivel
   barplot(a,b)
   
   pie(a)
+  
+
   
