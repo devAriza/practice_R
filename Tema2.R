@@ -387,33 +387,33 @@ misgrupos[,1]
 misgrupos$nivel
 
 #b) Calcula algunos estadísticos básicos:
-  mean(misgrupos$alumnos)
-  max(misgrupos$alumnos)
+mean(misgrupos$alumnos)
+max(misgrupos$alumnos)
 
 #c) Agregar un mensaje con la función paste:
-  paste("La media de alumnos es:", mean(misgrupos$alumnos), " fin del ejemplo")
-  paste(misgrupos)
+paste("La media de alumnos es:", mean(misgrupos$alumnos), " fin del ejemplo")
+paste(misgrupos)
 
 #d) Inspecciona a detalle el df utilizando summary:
-  summary(misgrupos)
-  
+summary(misgrupos)
+
 #e) Obtener la dimensión:
-  dim(misgrupos)
-  
+dim(misgrupos)
+
 #f) Agrega una columna extra con datos:
-  misgrupos$edificio <- c("10", "11", "12")
-  misgrupos
-  
-  misgrupos$colegiatura <- c(200, 250, 300)
-  misgrupos  
-  
-  misgrupos$z <- y
+misgrupos$edificio <- c("10", "11", "12")
+misgrupos
+
+misgrupos$colegiatura <- c(200, 250, 300)
+misgrupos  
+
+misgrupos$z <- y
 #g) Eliminar una columna:
-  
-  misgrupos$y <- NULL
-  misgrupos 
-  
-  
+
+misgrupos$y <- NULL
+misgrupos 
+
+
   
   
   
